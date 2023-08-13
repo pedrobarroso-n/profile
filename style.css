@@ -4,21 +4,25 @@
 }
 
 :root{
-    --cor_texto_links: black;
+    --cor_texto: black;
+    --cor_links: darkblue;
     --cor_botao: yellow;
     --cor_hover: rgba(2, 2, 2, 0.13);
     --cor_fundo: linear-gradient(grey, white);
     --cor_hover_links: rgba(24, 12, 12, 0.137);
     --mover_icone: 5px;
+    
 }
 .dark{
-    --cor_texto_links: white;
+    --cor_texto: white;
+    --cor_links: cornflowerblue;
     --cor_botao: purple;
     --cor_hover: rgba(245, 245, 245, 0.137);
     --cor_fundo: linear-gradient( grey, black);
     --cor_hover_links: rgba(245, 245, 245, 0.726);
     --mover_icone: -25px;
 }
+
 body{
     height: 100vh;
     background-image: var(--cor_fundo);
@@ -28,7 +32,7 @@ div#container{
     width: 500px;
     margin: auto;
     padding: 0px 6px;
-    color: var(--cor_texto_links);
+    color: var(--cor_texto);
 }
 
 div#perfil{ 
@@ -86,11 +90,12 @@ div#links a{
     text-align: center;
     text-decoration: none;
     border: 3px solid;
-    border-color: var(--cor_texto_links);
+    border-color: var(--cor_texto);
     border-radius: 9px;
     font-size: 1.05em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 800;
+    color: var(--cor_links);
 }
 div#links a:hover{
     background-color: var(--cor_hover_links);
@@ -117,8 +122,9 @@ footer{
     padding-top: 30px;
 }
 
+/*-----------------Media Querries----------------------*/
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px){ 
     div#container{
         width: 300px;
     }
@@ -126,7 +132,7 @@ footer{
         margin-left: 14%;
     }
 }
-@media screen and (orientation: landscape) and (max-width: 767px){
+@media screen and (orientation: landscape) and (max-width: 940px){
     body{
         height: 100%;
     }
