@@ -18,7 +18,7 @@
     --cor_links: cornflowerblue;
     --cor_botao: purple;
     --cor_hover: rgba(245, 245, 245, 0.137);
-    --cor_fundo: linear-gradient( grey, black);
+    --cor_fundo: linear-gradient( black, grey);
     --cor_hover_links: rgba(245, 245, 245, 0.726);
     --mover_icone: -25px;
 }
